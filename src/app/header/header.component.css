@@ -8,3 +8,11 @@
 {
     font-family: 'Viga', sans-serif;
 }
+.navbar-text
+{
+    margin-right: 10px;    
+}
+.navbar-text a 
+{
+    margin : 0 5px;
+}
