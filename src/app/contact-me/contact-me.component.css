@@ -1,3 +1,16 @@
-h1{
-    font-family: 'Acme', sans-serif;
+#contactMe
+{
+    width: 100%;
+    color: #333333;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+}
+h1,p
+{
+    text-align: center;
 }

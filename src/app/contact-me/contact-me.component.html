@@ -1,3 +1,29 @@
-<div class="container">
-    <h1>Contact me</h1>
+<div id="contactMe">
+    <div class="col-md-8">
+        <h1>Contact Me</h1>
+        <p>
+            Contact me with any questions or inquiries or call +216 53 851 745. I would be
+            happy to answer your question.
+        </p>
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="subjectInput">Subject</label>
+              <input type="text" class="form-control" id="subjectInput">
+            </div>
+            <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+    </div>
 </div>
