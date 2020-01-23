@@ -4,8 +4,13 @@
     font-family: 'Luckiest Guy', cursive;
     margin-right: 15%;
 }
+.nav-item
+{
+    margin: 0 5px;
+}
 .nav-link
 {
+    font-size: 1.1em;
     font-family: 'Viga', sans-serif;
 }
 .navbar-text
@@ -14,5 +19,11 @@
 }
 .navbar-text a 
 {
-    margin : 0 5px;
+    margin : 0 7px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+.navbar-text a:hover
+{
+    opacity: 1;
 }
