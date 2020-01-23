@@ -4,3 +4,18 @@
     margin: 10px;
     padding: 20px;
 }
+#languages-list,#skills-section
+{
+    list-style : none;   
+    margin-left: 0;
+    padding-left: 0;
+}
+#languages-list li,#skills-section li
+{
+    margin-bottom: 3px;
+}
+.cv-subtitle
+{
+    color: rgb(40, 108, 218);
+    font-weight: bold;
+}

@@ -10,7 +10,14 @@
     display: flex;
     float: none;
 }
+.contact-section
+{
+    padding: 50px !important;
+    margin : 25px 0;
+    background-color: red;
+}
 h1,p
 {
     text-align: center;
 }
+
