@@ -1,5 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
-h1
-{
-    font-family: 'Viga', sans-serif;
-}
+/* charte graphique
+    #071013 : 
+    #2b303a : Navbar
+    #7a7978 : Icons  
+    #bdd4e7 : 
+    #5c9ead : */
+
+/* Google Fonts
+    Luckiest Guy For Brand (font-family: 'Luckiest Guy', cursive;)
+    Viga For Navbar items (font-family: 'Viga', sans-serif;) */
+
+    h1,h2,h3
+    {
+        color: #071013;
+        font-family: 'Viga', sans-serif;
+    }
+    .container
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    i
+    {
+        color: #7a7978;
+    }
+    hr
+    {
+        background-color: #bdd4e7 ;
+    }
+    .hr-detail
+    {
+        width: 50%;
+    }

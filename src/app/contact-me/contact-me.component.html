@@ -1,29 +1,29 @@
 <div id="contactMe">
     <div class="contact-section col-md-8 shadow p-3 mb-5 bg-white rounded">
-        <h1>Contact Me</h1>
+        <h1>Contactez Moi</h1>
         <p>
-            Contact me with any questions or inquiries or call +216 53 851 745. I would be
-            happy to answer your question.
+            Contactez-moi pour toute question ou demande de renseignements ou appelez le +216 53 851 745. Je serais
+            heureux de répondre à votre question.
         </p>
-        <form>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
             <div class="form-group">
-                <label for="nameInput">Name</label>
-                <input type="text" class="form-control" id="nameInput">
+                <label for="nameInput">Nom</label>
+                <input type="text" class="form-control" id="nameInput" name="name" ngModel required>
             </div>
             <div class="form-group">
                 <label for="emailInput">Email</label>
-                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="email" ngModel required email>
+                <small id="emailHelp" class="form-text text-muted">Je ne partagerai jamais votre e-mail avec quelqu'un d'autre.</small>
             </div>
             <div class="form-group">
-              <label for="subjectInput">Subject</label>
-              <input type="text" class="form-control" id="subjectInput">
+              <label for="subjectInput">Sujet</label>
+              <input type="text" class="form-control" id="subjectInput" name="subject" ngModel required>
             </div>
             <div class="form-group">
                 <label for="messageInput">Message</label>
-                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                <textarea class="form-control" id="messageInput" rows="3" name="message" ngModel required></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Send Email</button>
+            <button type="submit" class="btn btn-dark" [disabled]="f.invalid">Envoyer</button>
           </form>
     </div>
 </div>
