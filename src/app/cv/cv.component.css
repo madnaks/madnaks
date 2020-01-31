@@ -1,16 +1,10 @@
-.container
-{
-    width: 100%;
-    margin: 10px;
-    padding: 20px;
-}
-#languages-list,#skills-section
+#languages-list,#skills-list,#hobbies-list
 {
     list-style : none;   
     margin-left: 0;
     padding-left: 0;
 }
-#languages-list li,#skills-section li
+#languages-list li,#skills-list li,#hobbies-list li
 {
     margin-bottom: 3px;
 }
@@ -18,4 +12,12 @@
 {
     color: rgb(40, 108, 218);
     font-weight: bold;
+}
+.cv-section 
+{
+    margin-bottom: 25px;
+}
+.progress-bar
+{
+    background-color: #00A7FF !important;
 }

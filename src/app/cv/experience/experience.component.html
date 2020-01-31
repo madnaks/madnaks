@@ -1,0 +1,14 @@
+<hr>
+{{periode}}<br>
+<b>{{society}}</b><br>
+<h3>{{post}}</h3>
+<p class="text-primary">Mission | Projets</p>
+<ul>
+    <li *ngFor = "let mission of missions">
+        {{mission}}
+    </li>
+</ul>
+<p class="text-primary">Technologies | Outils</p>
+<p>{{technology}}</p>
+<a routerLink="">Voir Détail</a>
+
