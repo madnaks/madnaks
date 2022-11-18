@@ -7,12 +7,12 @@ import { FourOhFourComponent } from './core/four-oh-four/four-oh-four.component'
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path:'home', component: HomeComponent },
-  { path:'contact-me', component : ContactMeComponent},
-  { path:'cv',component : CvComponent},
-  { path:'not-found', component: FourOhFourComponent},
-  { path:'**', redirectTo: 'not-found'}
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact-me', component: ContactMeComponent },
+  { path: 'cv', component: CvComponent },
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' }
 ];
 
 @NgModule({
