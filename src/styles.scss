@@ -1,0 +1,17 @@
+@import 'styles-variables.scss';
+
+body {
+    background-color: $primary-color;
+}
+
+i {
+    color: #7a7978;
+}
+
+hr {
+    background-color: #bdd4e7;
+}
+
+.hr-detail {
+    width: 50%;
+}

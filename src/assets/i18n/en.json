@@ -1,0 +1,15 @@
+{
+    "Home": {
+        "Welcome": "Hello, I'm ",
+        "Name": "Mohamed Iskander Haouem.",
+        "Slogan": "I'm a full-stack web developer."
+    },
+    "Navbar": {
+        "Menu": {
+            "Home": "Home",
+            "Docs":"Docs",
+            "CurriculumVitae": "Curriculum Vitae",
+            "ContactMe":"Contact me"
+        }
+    }
+}
