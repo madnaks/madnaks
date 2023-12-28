@@ -4,26 +4,34 @@
     <img width="75%" src="../../../assets/icons/svg/logo 1.svg" />
   </div>
 
-  <div class="navbar-menu">
-    <span class="nav-item" routerLink="home" routerspannkActive="active">
-      <i class="fa fa-home"></i> {{ 'Navbar.Menu.Home' | translate }}
-    </span>
-    <span class="nav-item" routerLink="#" routerspannkActive="active">
-      <i class="fa fa-book"></i> {{ 'Navbar.Menu.Docs' | translate }}
-    </span>
-    <span class="nav-item" routerLink="cv" routerspannkActive="active">
-      <i class="fa fa-file"></i> {{ 'Navbar.Menu.CurriculumVitae' | translate }}
-    </span>
-    <span class="nav-item" routerLink="contact-me" routerspannkActive="active">
-      <i class="fa fa-id-card"></i> {{ 'Navbar.Menu.ContactMe' | translate }}
-    </span>
-  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <div class="navbar-social-media-buttons">
-    <a href="https://www.facebook.com/medskander.haouam" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-    <a href="https://www.linkedin.com/in/mohamed-iskander-haouem/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    <a href="https://github.com/madnaks" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-    <a href="https://twitter.com/MadNaks" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
-  </div>
+  <div class="navbar-collapse collapse" id="navbarNav">
+    <div class="navbar-menu">
+      <span class="nav-item" routerLink="home" routerspannkActive="active">
+        <i class="fa fa-home"></i> {{ 'Navbar.Menu.Home' | translate }}
+      </span>
+      <span class="nav-item" routerLink="#" routerspannkActive="active">
+        <i class="fa fa-book"></i> {{ 'Navbar.Menu.Docs' | translate }}
+      </span>
+      <span class="nav-item" routerLink="cv" routerspannkActive="active">
+        <i class="fa fa-file"></i> {{ 'Navbar.Menu.CurriculumVitae' | translate }}
+      </span>
+      <span class="nav-item" routerLink="contact-me" routerspannkActive="active">
+        <i class="fa fa-id-card"></i> {{ 'Navbar.Menu.ContactMe' | translate }}
+      </span>
+    </div>
 
+    <div class="navbar-social-media-menu">
+      <a href="https://www.facebook.com/medskander.haouam" target="_blank"><i
+          class="fa-brands fa-facebook fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/mohamed-iskander-haouem/" target="_blank"><i
+          class="fa-brands fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/madnaks" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+      <a href="https://twitter.com/MadNaks" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
 </nav>
