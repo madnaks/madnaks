@@ -16,3 +16,13 @@ hr {
 .hr-detail {
     width: 50%;
 }
+
+
+h1 {
+    color: $first-text-color;
+    font-family: $viga-font;
+}
+
+h2, p {
+    color: $second-text-color;
+}

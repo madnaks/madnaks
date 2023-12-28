@@ -1,13 +1,11 @@
 @import "../../styles-variables.scss";
 
+.container {
+    margin: 5% 0;
+}
+
 h1 {
-    color: $first-text-color;
-    font-family: $viga-font;
     span:nth-child(2) {
         color: $secondary-color;
     }
-}
-
-h2 {
-    color: $second-text-color;
 }
