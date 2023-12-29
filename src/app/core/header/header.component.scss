@@ -4,8 +4,11 @@
 
     .navbar-icon {
         margin: 0 20px;
+        opacity: 0.8;
+        transition: all 0.3s ease-in-out;
         &:hover {
             cursor: pointer;
+            opacity: 1;
         }
     }
 
@@ -22,10 +25,13 @@
         justify-content: space-between;
         .navbar-menu {
             .nav-item {
+                display: inline-block;
                 font-size: 1.1em;
                 font-family: $viga-font;
                 color: $first-text-color;
                 user-select: none;
+                transition: all 0.3s ease-in-out;
+                opacity: 0.8;
 
                 i {
                     color: $secondary-color;
@@ -33,6 +39,8 @@
 
                 &:hover {
                     cursor: pointer;
+                    transform: scale(1.01);
+                    opacity: 1;
                 }
 
                 &:not(:last-child) {
