@@ -10,7 +10,7 @@ export class AppComponent {
 
   title = 'madnaks';
 
-  constructor(translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('en');
 
@@ -18,4 +18,11 @@ export class AppComponent {
     translate.use('en');
   }
 
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
+
+  currentLang(language: string): boolean {
+    return this.translate.currentLang == language;
+  }
 }

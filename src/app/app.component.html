@@ -7,3 +7,19 @@
 </div>
 
 <!--Footer-->
+
+<!-- Language options -->
+<div class="language">
+  <i class="fa-solid fa-language fa-2xl"></i>
+  <div class="triangle"></div>
+  <ul>
+      <li (click)="useLanguage('en')" [ngClass]="{ 'active-lang' : currentLang('en')}">
+          <img class="flag" src="https://flagsapi.com/US/flat/24.png">
+          <span>{{ 'Language.EN' | translate }}</span>
+      </li>
+      <li (click)="useLanguage('fr')" [ngClass]="{ 'active-lang' : currentLang('fr')}">
+          <img class="flag" src="https://flagsapi.com/FR/flat/24.png">
+          <span>{{ 'Language.FR' | translate }}</span>
+      </li>
+  </ul>
+</div>

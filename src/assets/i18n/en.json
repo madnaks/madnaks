@@ -11,5 +11,9 @@
             "CurriculumVitae": "Curriculum Vitae",
             "ContactMe":"Contact me"
         }
+    },
+    "Language": {
+        "EN": "English",
+        "FR": "French"
     }
 }
