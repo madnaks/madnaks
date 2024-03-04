@@ -2,11 +2,17 @@
 <app-header></app-header>
 
 <!--Body-->
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center" id="home">
+  <app-home></app-home>
 </div>
 
-<!--Footer-->
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center" id="about-me">
+  <app-about-me></app-about-me>
+</div>
+
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center" id="contact-me">
+  <app-contact-me></app-contact-me>
+</div>
 
 <!-- Language options -->
 <div class="language">

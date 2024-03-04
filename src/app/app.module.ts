@@ -16,6 +16,7 @@ import { TraineeshipComponent } from './cv/traineeship/traineeship.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,7 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     ExperienceComponent,
     FormationComponent,
-    TraineeshipComponent
+    TraineeshipComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
