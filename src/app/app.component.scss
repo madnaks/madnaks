@@ -1,5 +1,9 @@
 @import "../styles-variables.scss";
 
+#about-me {
+    background-color: $second-text-color;
+}
+
 .language {
     position: fixed;
     bottom: 1px;
