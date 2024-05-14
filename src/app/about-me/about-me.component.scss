@@ -1,18 +1,21 @@
 @import '../../styles-variables.scss';
 
 .about-me-title {
-    text-align: center;
     margin: 10% 0;
-}
-
-p {
-    color: $primary-color;
 }
 
 h1 {
     span:nth-child(2) {
         color: $secondary-color;
     }
+}
+
+h2 {
+    color: $primary-color;
+}
+
+p {
+    color: $primary-color;
 }
 
 .progress {
