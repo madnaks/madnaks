@@ -9,11 +9,11 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FourOhFourComponent } from './core/four-oh-four/four-oh-four.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { ExperienceComponent } from './experience/experience.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ExperienceDetailComponent } from './experience-detail/experience-detail.component';
+import { TestComponent } from './test/test.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,9 +27,8 @@ export function createTranslateLoader(http: HttpClient) {
     HeaderComponent,
     FourOhFourComponent,
     FooterComponent,
-    ExperienceComponent,
-    ExperienceComponent,
-    ExperienceDetailComponent
+    ExperienceDetailComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
