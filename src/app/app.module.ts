@@ -7,16 +7,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HeaderComponent } from './core/header/header.component';
-import { CvComponent } from './cv/cv.component';
 import { FourOhFourComponent } from './core/four-oh-four/four-oh-four.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { ExperienceComponent } from './cv/experience/experience.component';
-import { FormationComponent } from './cv/formation/formation.component';
-import { TraineeshipComponent } from './cv/traineeship/traineeship.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { ExperienceDetailComponent } from './experience-detail/experience-detail.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,13 +25,11 @@ export function createTranslateLoader(http: HttpClient) {
     HomeComponent,
     ContactMeComponent,
     HeaderComponent,
-    CvComponent,
     FourOhFourComponent,
     FooterComponent,
     ExperienceComponent,
-    FormationComponent,
-    TraineeshipComponent,
-    AboutMeComponent
+    ExperienceComponent,
+    ExperienceDetailComponent
   ],
   imports: [
     BrowserModule,
