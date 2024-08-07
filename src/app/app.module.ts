@@ -13,7 +13,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ExperienceDetailComponent } from './experience-detail/experience-detail.component';
-import { TestComponent } from './test/test.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,7 +28,7 @@ export function createTranslateLoader(http: HttpClient) {
     FourOhFourComponent,
     FooterComponent,
     ExperienceDetailComponent,
-    TestComponent
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

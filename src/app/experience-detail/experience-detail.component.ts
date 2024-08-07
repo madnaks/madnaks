@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./experience-detail.component.scss']
 })
 export class ExperienceDetailComponent {
-  @Input() title: string;
+  @Input() company: string;
 }

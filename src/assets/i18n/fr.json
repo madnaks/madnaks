@@ -12,6 +12,26 @@
             "ContactMe":"Contactez Moi"
         }
     },
+    "Experience": {
+        "Nerium": {
+            "Name": "Nerium software",
+            "Title": "Développeur full-stack",
+            "Period": "SEPT 2020 - FEB 2023",
+            "Description": "Travaillé en équipe sur la migration du logiciel ERP « Flowone/Vinistoria » de Delphi vers un ERP web SaaS moderne avec micro-services. Axé sur le frontend avec Angular et DevExtreme, et le backend avec .NET Core 3.1, NHibernate, et SQL Server. Contribué également au projet IdCloudPlatform, utilisant .NET 5, Entity Framework Core, et PostgreSQL, en suivant les méthodologies Agile et Scrum."
+        },
+        "Bitbase": {
+            "Name": "Bitbase",
+            "Title": "Développeur full-stack",
+            "Period": "FEB 2020 - AUG 2020",
+            "Description": "Travaillé sur KAMEON 3, en migrant de ASP.NET Web Forms vers des technologies modernes utilisant ASP.NET Core 2.2 et Angular 7. Développé un ERP avec une bibliothèque UI personnalisée en Angular Material et un backend avec SQL Server, utilisant un ORM personnalisé et le pattern de conception CQS. La gestion de projet suivait les méthodologies Agile et Scrum avec Jira."
+        },
+        "TSI": {
+            "Name": "TSI",
+            "Title": "Analyste développeur",
+            "Period": "JAN 2019 - JAN 2020",
+            "Description": "Contribué au projet ERP de TSI, destiné aux entreprises tunisiennes, en se concentrant sur la gestion, la comptabilité, la paie, etc. Développé de nouvelles fonctionnalités, amélioré la qualité et corrigé les bogues en utilisant .NET 4.5 et C#. A également travaillé sur place avec FARMASI, le plus grand client de TSI, pour développer un logiciel de gestion commerciale personnalisé. Les deux projets ont suivi les méthodologies Agile et Scrum, gérés avec PROJEQTOR."
+        }
+    },
     "Language": {
         "EN": "Englais",
         "FR": "Français"

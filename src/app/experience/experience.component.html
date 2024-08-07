@@ -1,0 +1,10 @@
+<div class="col-12 text-center experience-title">
+    <h1>EXPERIENCE</h1>
+</div>
+<div class="row d-flex flex-column align-items-center">
+    <div class="col-lg-6 col-md-8 col-sm-12 boxes">
+        <app-experience-detail *ngFor="let company of companies"
+            [company]="company">
+        </app-experience-detail>
+    </div>
+</div>
