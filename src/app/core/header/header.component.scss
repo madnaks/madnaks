@@ -49,22 +49,6 @@
             }
         }
 
-        .navbar-social-media-menu {
-            margin-right: 10px;
-
-            a {
-                margin: 0 7px;
-                opacity: 0.5;
-                transition: opacity 0.2s;
-
-                i {
-                    color: $secondary-color;
-                }
-            }
-
-            a:hover {
-                opacity: 1;
-            }
-        }
+       
     }
 }

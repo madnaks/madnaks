@@ -11,27 +11,18 @@
 
   <div class="navbar-collapse collapse" id="navbarNav">
     <div class="navbar-menu">
-      <span class="nav-item" routerLink="home">
+      <span class="nav-item" (click)="scrollTo('home')">
         <i class="fa fa-home"></i> {{ 'Navbar.Menu.Home' | translate }}
       </span>
-      <span class="nav-item" routerLink="#">
+      <span class="nav-item" (click)="scrollTo('experience')">
         <i class="fa fa-book"></i> {{ 'Navbar.Menu.Docs' | translate }}
       </span>
       <span class="nav-item" routerLink="cv">
         <i class="fa fa-file"></i> {{ 'Navbar.Menu.CurriculumVitae' | translate }}
       </span>
-      <span class="nav-item" routerLink="contact-me">
+      <span class="nav-item" (click)="scrollTo('contact-me')">
         <i class="fa fa-id-card"></i> {{ 'Navbar.Menu.ContactMe' | translate }}
       </span>
-    </div>
-
-    <div class="navbar-social-media-menu">
-      <a href="https://www.facebook.com/medskander.haouam" target="_blank"><i
-          class="fa-brands fa-facebook fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/mohamed-iskander-haouem/" target="_blank"><i
-          class="fa-brands fa-linkedin fa-lg"></i></a>
-      <a href="https://github.com/madnaks" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-      <a href="https://twitter.com/MadNaks" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
     </div>
   </div>
 </nav>
