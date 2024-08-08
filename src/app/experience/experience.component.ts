@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  companies: string[] = ['Nerium', 'Bitbase', 'TSI'];
+  companies: string[] = ['Levio', 'Nerium', 'Bitbase', 'TSI', 'AACMI'];
 }

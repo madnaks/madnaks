@@ -13,6 +13,12 @@
         }
     },
     "Experience": {
+        "Levio": {
+            "Name": "Levio",
+            "Title": "Développeur full-stack",
+            "Period": "MAR 2023 - Today",
+            "Description": "Développeur Fullstack chez Levio, travaillant sur divers projets clients, chacun avec ses propres technologies, applications, et logiques métier. Adapté à différents environnements pour fournir des solutions sur mesure, en veillant à l’alignement avec les besoins spécifiques de chaque client."
+        },
         "Nerium": {
             "Name": "Nerium software",
             "Title": "Développeur full-stack",
@@ -30,6 +36,12 @@
             "Title": "Analyste développeur",
             "Period": "JAN 2019 - JAN 2020",
             "Description": "Contribué au projet ERP de TSI, destiné aux entreprises tunisiennes, en se concentrant sur la gestion, la comptabilité, la paie, etc. Développé de nouvelles fonctionnalités, amélioré la qualité et corrigé les bogues en utilisant .NET 4.5 et C#. A également travaillé sur place avec FARMASI, le plus grand client de TSI, pour développer un logiciel de gestion commerciale personnalisé. Les deux projets ont suivi les méthodologies Agile et Scrum, gérés avec PROJEQTOR."
+        },
+        "AACMI": {
+            "Name": "AACMI",
+            "Title": "Analyste développeur",
+            "Period": "SEPT 2017 - DEC 2018",
+            "Description": "Développé un mini ERP personnalisé pour les agents et cadres du ministère de l’Intérieur, incluant des modules de gestion des ressources humaines, de la comptabilité, des événements, et des adhérents. Réalisé l'analyse, la conception, et le développement avec WinForms sur .NET Framework 4.5. Créé et maintenu également un blog CMS WordPress pour les nouvelles de l’AACMI."
         }
     },
     "Language": {
