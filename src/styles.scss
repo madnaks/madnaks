@@ -1,8 +1,12 @@
 @import 'styles-variables.scss';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
-body {
-    background-color: $primary-color;
+.first-background-color {
+    background-color: $background-color-1;
+}
+
+.second-background-color {
+    background-color: $background-color-2;
 }
 
 i {
@@ -18,7 +22,7 @@ hr {
 }
 
 h1 {
-    color: $first-text-color;
+    color: $title-color;
     font-family: $viga-font;
 }
 

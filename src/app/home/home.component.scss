@@ -6,10 +6,10 @@
 
 h1 {
     span:nth-child(2) {
-        color: $secondary-color;
+        color: $highlight-color;
     }
 }
 
 h2, p {
-    color: $second-text-color;
+    color: $text-color-1;
 }

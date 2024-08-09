@@ -28,13 +28,13 @@
                 display: inline-block;
                 font-size: 1.1em;
                 font-family: $viga-font;
-                color: $first-text-color;
+                color: $title-color;
                 user-select: none;
                 transition: all 0.3s ease-in-out;
                 opacity: 0.8;
 
                 i {
-                    color: $secondary-color;
+                    color: $highlight-color;
                 }
 
                 &:hover {

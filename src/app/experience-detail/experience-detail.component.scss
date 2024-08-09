@@ -8,7 +8,10 @@
 }
 
 .box:hover {
-    background-color: $first-text-color;
+    background-color: $title-color;
     cursor: pointer;
 }
 
+h2, p {
+    color: $text-color-2;
+}
