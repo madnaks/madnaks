@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -25,4 +25,26 @@ export class AppComponent {
   currentLang(language: string): boolean {
     return this.translate.currentLang == language;
   }
+
+  currentSection: string = 'home';
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const homeSection = document.getElementById('home');
+    const experienceSection = document.getElementById('experience');
+    const contactMeSection = document.getElementById('contact-me');
+
+    if (homeSection && experienceSection && contactMeSection) {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition < experienceSection.offsetTop) {
+        this.currentSection = 'home';
+      } else if (scrollPosition < contactMeSection.offsetTop) {
+        this.currentSection = 'experience';
+      } else {
+        this.currentSection = 'contact-me';
+      }
+    }
+  }
+
 }

@@ -1,16 +1,27 @@
-<!--Header-->
-<app-header></app-header>
+<!-- Header -->
+<header [ngClass]="{
+  'header': true,
+  'bg-home': currentSection === 'home',
+  'bg-experience': currentSection === 'experience',
+  'bg-contact-me': currentSection === 'contact-me'
+}">
+  <app-header></app-header>
+</header>
 
-<!--Body-->
-<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center" id="home">
+<!-- Body -->
+
+<!-- Home -->
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color" id="home">
   <app-home></app-home>
 </div>
 
-<div class="container-fluid d-flex flex-column align-items-center" id="experience">
+<!-- Experience -->
+<div class="container-fluid d-flex flex-column align-items-center second-background-color" id="experience">
   <app-experience class="w-100"></app-experience>
 </div>
 
-<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center" id="contact-me">
+<!-- Contact-Me -->
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color" id="contact-me">
   <app-contact-me></app-contact-me>
 </div>
 
@@ -19,13 +30,22 @@
   <i class="fa-solid fa-language fa-2xl"></i>
   <div class="triangle"></div>
   <ul>
-      <li (click)="useLanguage('en')" [ngClass]="{ 'active-lang' : currentLang('en')}">
-          <img class="flag" src="https://flagsapi.com/US/flat/24.png">
-          <span>{{ 'Language.EN' | translate }}</span>
-      </li>
-      <li (click)="useLanguage('fr')" [ngClass]="{ 'active-lang' : currentLang('fr')}">
-          <img class="flag" src="https://flagsapi.com/FR/flat/24.png">
-          <span>{{ 'Language.FR' | translate }}</span>
-      </li>
+    <li (click)="useLanguage('en')" [ngClass]="{ 'active-lang' : currentLang('en')}">
+      <img class="flag" src="https://flagsapi.com/US/flat/24.png">
+      <span>{{ 'Language.EN' | translate }}</span>
+    </li>
+    <li (click)="useLanguage('fr')" [ngClass]="{ 'active-lang' : currentLang('fr')}">
+      <img class="flag" src="https://flagsapi.com/FR/flat/24.png">
+      <span>{{ 'Language.FR' | translate }}</span>
+    </li>
   </ul>
+</div>
+
+<!-- Social media links -->
+<div class="navbar-social-media-menu">
+  <a href="https://www.facebook.com/medskander.haouam" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+  <a href="https://www.linkedin.com/in/mohamed-iskander-haouem/" target="_blank"><i
+      class="fa-brands fa-linkedin fa-lg"></i></a>
+  <a href="https://github.com/madnaks" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/MadNaks" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
 </div>
