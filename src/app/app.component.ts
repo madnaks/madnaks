@@ -8,7 +8,15 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
+  currentTheme: string = 'theme-1';
+
   title = 'madnaks';
+  accounts = [
+    { name: 'facebook', link: 'https://www.facebook.com/medskander.haouam' },
+    { name: 'linkedin', link: 'https://www.linkedin.com/in/mohamed-iskander-haouem/' },
+    { name: 'github', link: 'https://github.com/madnaks' },
+    { name: 'twitter', link: 'https://twitter.com/MadNaks' }
+  ];
 
   constructor(private translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
@@ -26,7 +34,15 @@ export class AppComponent {
     return this.translate.currentLang == language;
   }
 
-  currentSection: string = 'home';
+  getIconClass(): string {
+    switch (this.currentTheme) {
+      case 'theme-1':
+        return 'theme-1';
+      case 'theme-2':
+        return 'theme-2';
+    }
+  }
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -38,11 +54,11 @@ export class AppComponent {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition < experienceSection.offsetTop) {
-        this.currentSection = 'home';
+        this.currentTheme = 'theme-1';
       } else if (scrollPosition < contactMeSection.offsetTop) {
-        this.currentSection = 'experience';
+        this.currentTheme = 'theme-2';
       } else {
-        this.currentSection = 'contact-me';
+        this.currentTheme = 'theme-1';
       }
     }
   }

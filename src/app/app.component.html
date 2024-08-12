@@ -1,9 +1,8 @@
 <!-- Header -->
 <header [ngClass]="{
   'header': true,
-  'bg-home': currentSection === 'home',
-  'bg-experience': currentSection === 'experience',
-  'bg-contact-me': currentSection === 'contact-me'
+  'bg-theme-1': currentTheme === 'theme-1',
+  'bg-theme-2': currentTheme === 'theme-2',
 }">
   <app-header></app-header>
 </header>
@@ -11,7 +10,8 @@
 <!-- Body -->
 
 <!-- Home -->
-<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color" id="home">
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color"
+  id="home">
   <app-home></app-home>
 </div>
 
@@ -21,7 +21,8 @@
 </div>
 
 <!-- Contact-Me -->
-<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color" id="contact-me">
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center first-background-color"
+  id="contact-me">
   <app-contact-me></app-contact-me>
 </div>
 
@@ -43,9 +44,7 @@
 
 <!-- Social media links -->
 <div class="navbar-social-media-menu">
-  <a href="https://www.facebook.com/medskander.haouam" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-  <a href="https://www.linkedin.com/in/mohamed-iskander-haouem/" target="_blank"><i
-      class="fa-brands fa-linkedin fa-lg"></i></a>
-  <a href="https://github.com/madnaks" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-  <a href="https://twitter.com/MadNaks" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+  <a *ngFor="let account of accounts" [href]="account.link" target="_blank">
+    <i [class]="currentTheme + ' fa-brands fa-' + account.name + ' fa-lg'"></i>
+  </a>
 </div>
