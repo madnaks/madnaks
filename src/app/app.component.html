@@ -1,8 +1,8 @@
 <!-- Header -->
 <header [ngClass]="{
   'header': true,
-  'bg-theme-1': currentTheme === 'theme-1',
-  'bg-theme-2': currentTheme === 'theme-2',
+  'bg-theme-1': currentHeaderTheme === 'theme-1',
+  'bg-theme-2': currentHeaderTheme === 'theme-2',
 }">
   <app-header></app-header>
 </header>
@@ -45,6 +45,6 @@
 <!-- Social media links -->
 <div class="navbar-social-media-menu">
   <a *ngFor="let account of accounts" [href]="account.link" target="_blank">
-    <i [class]="currentTheme + ' fa-brands fa-' + account.name + ' fa-lg'"></i>
+    <i [class]="currentFooterTheme + ' fa-brands fa-' + account.name + ' fa-lg'"></i>
   </a>
 </div>
