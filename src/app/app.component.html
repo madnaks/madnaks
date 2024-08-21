@@ -45,6 +45,6 @@
 <!-- Social media links -->
 <div class="navbar-social-media-menu">
   <a *ngFor="let account of accounts" [href]="account.link" target="_blank">
-    <i [class]="currentFooterTheme + ' fa-brands fa-' + account.name + ' fa-lg'"></i>
+    <i [class]="'fa-brands fa-' + account.name + ' fa-lg'"></i>
   </a>
 </div>

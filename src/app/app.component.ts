@@ -9,7 +9,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
 
   currentHeaderTheme: string = 'theme-1';
-  currentFooterTheme: string = 'theme-1';
 
   title = 'madnaks';
   accounts = [
@@ -38,7 +37,6 @@ export class AppComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.updateHeaderSection();
-    this.updateButtonSection();
   }
 
   updateHeaderSection() {
@@ -57,25 +55,6 @@ export class AppComponent {
         this.currentHeaderTheme = 'theme-1';
       }
     }
-  }
-
-  updateButtonSection() {
-    const homeSection = document.getElementById('home');
-    const experienceSection = document.getElementById('experience');
-    const contactMeSection = document.getElementById('contact-me');
-
-    if (homeSection && experienceSection && contactMeSection) {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-      if (scrollPosition >= contactMeSection.offsetTop) {
-        this.currentFooterTheme = 'theme-1';
-      } else if (scrollPosition >= experienceSection.offsetTop) {
-        this.currentFooterTheme = 'theme-2';
-      } else {
-        this.currentFooterTheme = 'theme-1';
-      }
-    }
-
   }
 
 }
