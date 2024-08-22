@@ -7,7 +7,7 @@
     "Navbar": {
         "Menu": {
             "Home": "Acceuil",
-            "Docs":"Documents",
+            "Experience":"Expérience",
             "CurriculumVitae":"Curriculum vitae",
             "ContactMe":"Contactez Moi"
         }

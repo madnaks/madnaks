@@ -15,13 +15,15 @@
         <i class="fa fa-home"></i> {{ 'Navbar.Menu.Home' | translate }}
       </span>
       <span class="nav-item" (click)="scrollTo('experience')">
-        <i class="fa fa-book"></i> {{ 'Navbar.Menu.Docs' | translate }}
-      </span>
-      <span class="nav-item" routerLink="cv">
-        <i class="fa fa-file"></i> {{ 'Navbar.Menu.CurriculumVitae' | translate }}
+        <i class="fa fa-star"></i> {{ 'Navbar.Menu.Experience' | translate }}
       </span>
       <span class="nav-item" (click)="scrollTo('contact-me')">
         <i class="fa fa-id-card"></i> {{ 'Navbar.Menu.ContactMe' | translate }}
+      </span>
+      <span class="nav-item" (click)="openFile()" >
+        <i class="fa fa-file"></i> 
+        {{ 'Navbar.Menu.CurriculumVitae' | translate }}
+        <i class="fa fa-arrow-up-right-from-square"></i> 
       </span>
     </div>
   </div>
