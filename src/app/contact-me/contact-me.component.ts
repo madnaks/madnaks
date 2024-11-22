@@ -12,6 +12,7 @@ export class ContactMeComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   onSubmit(form: NgForm) {
     console.log(form.value);
   }
