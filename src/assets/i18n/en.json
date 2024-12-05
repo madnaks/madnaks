@@ -43,6 +43,17 @@
             "Period": "SEPT 2017 - DEC 2018",
             "Description": "Developed a custom mini ERP for the Ministry of Interior's agents and executives, including HR, accounting, events, and membership modules. Handled analysis, design, and development using WinForms on .NET Framework 4.5. Also created and maintained a WordPress CMS blog for AACMI news."
         }
+    }, 
+    "ContactMe": {
+        "Header": "Contact Me",
+        "Description":"Contact me with any questions or inquiries. I would be happy to answer your question.",
+        "Form": {
+            "Name": "Name",
+            "Email": "Email",
+            "Subject":"Subject",
+            "Message": "Message",
+            "Send":"Send"
+        }
     },
     "Language": {
         "EN": "English",

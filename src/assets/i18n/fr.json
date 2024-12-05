@@ -44,6 +44,17 @@
             "Description": "Développé un mini ERP personnalisé pour les agents et cadres du ministère de l’Intérieur, incluant des modules de gestion des ressources humaines, de la comptabilité, des événements, et des adhérents. Réalisé l'analyse, la conception, et le développement avec WinForms sur .NET Framework 4.5. Créé et maintenu également un blog CMS WordPress pour les nouvelles de l’AACMI."
         }
     },
+    "ContactMe": {
+        "Header": "Contactez Moi",
+        "Description":"Contactez-moi pour toute question ou demande de renseignements. Je serais heureux de répondre à votre question.",
+        "Form": {
+            "Name": "Nom",
+            "Email": "Courriel",
+            "Subject":"Sujet",
+            "Message": "Message",
+            "Send":"Envoyer"
+        }
+    },
     "Language": {
         "EN": "Englais",
         "FR": "Français"
