@@ -1,30 +1,39 @@
 <div id="contact-me">
     <div class="contact-section col-md-8 shadow p-3 mb-5 bg-white rounded">
         <h1 class="text-center">
-            Contactez Moi
+            {{ 'ContactMe.Header' | translate }}
         </h1>
         <p class="text-center">
-            Contactez-moi pour toute question ou demande de renseignements. Je serais
-            heureux de répondre à votre question.
+            {{ 'ContactMe.Description' | translate }}
         </p>
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                <label for="nameInput">Name</label>
+                <label for="nameInput">
+                    {{ 'ContactMe.Form.Name' | translate }}
+                </label>
             </div>
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="emailInput" placeholder="Email">
-                <label for="emailInput">Email</label>
+                <label for="emailInput">
+                    {{ 'ContactMe.Form.Email' | translate }}
+                </label>
             </div>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="subjectInput" placeholder="Sujet">
-                <label for="subjectInput">Sujet</label>
+                <label for="subjectInput">
+                    {{ 'ContactMe.Form.Subject' | translate }}
+                </label>
             </div>
             <div class="form-floating mb-3">
                 <textarea class="form-control" id="messageInput" style="height: 100px" placeholder="Message"></textarea>
-                <label for="messageInput">Message</label>
+                <label for="messageInput">
+                    {{ 'ContactMe.Form.Message' | translate }}
+                </label>
             </div>
-            <button type="submit" class="btn btn-dark" [disabled]="f.invalid">Envoyer</button>
+            <button type="submit" class="btn btn-dark" [disabled]="f.invalid">
+                {{ 'ContactMe.Form.Send' | translate }}
+            </button>
         </form>
     </div>
 </div>
