@@ -16,19 +16,19 @@
         "Levio": {
             "Name": "Levio",
             "Title": "Développeur full-stack",
-            "Period": "MAR 2023 - Today",
+            "Period": "MAR 2023 - Aujourd'hui",
             "Description": "Développeur Fullstack chez Levio, travaillant sur divers projets clients, chacun avec ses propres technologies, applications, et logiques métier. Adapté à différents environnements pour fournir des solutions sur mesure, en veillant à l’alignement avec les besoins spécifiques de chaque client."
         },
         "Nerium": {
             "Name": "Nerium software",
             "Title": "Développeur full-stack",
-            "Period": "SEPT 2020 - FEB 2023",
+            "Period": "SEPT 2020 - FEV 2023",
             "Description": "Travaillé en équipe sur la migration du logiciel ERP « Flowone/Vinistoria » de Delphi vers un ERP web SaaS moderne avec micro-services. Axé sur le frontend avec Angular et DevExtreme, et le backend avec .NET Core 3.1, NHibernate, et SQL Server. Contribué également au projet IdCloudPlatform, utilisant .NET 5, Entity Framework Core, et PostgreSQL, en suivant les méthodologies Agile et Scrum."
         },
         "Bitbase": {
             "Name": "Bitbase",
             "Title": "Développeur full-stack",
-            "Period": "FEB 2020 - AUG 2020",
+            "Period": "FEV 2020 - AOUT 2020",
             "Description": "Travaillé sur KAMEON 3, en migrant de ASP.NET Web Forms vers des technologies modernes utilisant ASP.NET Core 2.2 et Angular 7. Développé un ERP avec une bibliothèque UI personnalisée en Angular Material et un backend avec SQL Server, utilisant un ORM personnalisé et le pattern de conception CQS. La gestion de projet suivait les méthodologies Agile et Scrum avec Jira."
         },
         "TSI": {
