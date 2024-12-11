@@ -7,30 +7,35 @@
             {{ 'ContactMe.Description' | translate }}
         </p>
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <!-- Name -->
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="nameInput" placeholder="Name">
                 <label for="nameInput">
                     {{ 'ContactMe.Form.Name' | translate }}
                 </label>
             </div>
+            <!-- Email -->
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="emailInput" placeholder="Email">
                 <label for="emailInput">
                     {{ 'ContactMe.Form.Email' | translate }}
                 </label>
             </div>
+            <!-- Subject -->
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="subjectInput" placeholder="Sujet">
+                <input type="text" class="form-control" id="subjectInput" placeholder="Subjet">
                 <label for="subjectInput">
                     {{ 'ContactMe.Form.Subject' | translate }}
                 </label>
             </div>
+            <!-- Message -->
             <div class="form-floating mb-3">
                 <textarea class="form-control" id="messageInput" style="height: 100px" placeholder="Message"></textarea>
                 <label for="messageInput">
                     {{ 'ContactMe.Form.Message' | translate }}
                 </label>
             </div>
+            <!-- Send Button -->
             <button type="submit" class="btn btn-dark" [disabled]="f.invalid">
                 {{ 'ContactMe.Form.Send' | translate }}
             </button>
