@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg d-flex align-items-center">
 
+  <!-- Icon -->
   <div class="navbar-icon" routerLink="">
     <img width="75%" src="../../../assets/icons/svg/website-logo.svg" />
   </div>
 
+  <!-- Responsive Button -->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,15 +13,19 @@
 
   <div class="navbar-collapse collapse" id="navbarNav">
     <div class="navbar-menu">
+      <!-- Home -->
       <span class="nav-item" (click)="scrollTo('home')">
         <i class="fa fa-home"></i> {{ 'Navbar.Menu.Home' | translate }}
       </span>
+      <!-- Experience -->
       <span class="nav-item" (click)="scrollTo('experience')">
         <i class="fa fa-star"></i> {{ 'Navbar.Menu.Experience' | translate }}
       </span>
+      <!-- Contact Me -->
       <span class="nav-item" (click)="scrollTo('contact-me')">
         <i class="fa fa-id-card"></i> {{ 'Navbar.Menu.ContactMe' | translate }}
       </span>
+      <!-- CV -->
       <span class="nav-item" (click)="openFile()" >
         <i class="fa fa-file"></i> 
         {{ 'Navbar.Menu.CurriculumVitae' | translate }}
