@@ -42,15 +42,12 @@ export class AppComponent {
   updateHeaderSection() {
     const homeSection = document.getElementById('home');
     const experienceSection = document.getElementById('experience');
-    const contactMeSection = document.getElementById('contact-me');
 
-    if (homeSection && experienceSection && contactMeSection) {
+    if (homeSection && experienceSection) {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition < experienceSection.offsetTop) {
         this.currentHeaderTheme = 'theme-1';
-      } else if (scrollPosition < contactMeSection.offsetTop) {
-        this.currentHeaderTheme = 'theme-2';
       } else {
         this.currentHeaderTheme = 'theme-1';
       }
